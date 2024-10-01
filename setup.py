@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='dsplayer-youtube',  
-    version='1.1.0',
+    version='1.2.0',
     packages=find_packages(),
     install_requires=[
         'dsplayer',
@@ -10,7 +10,7 @@ setup(
     ],
     entry_points={
         'dsplayer.plugins': [
-            'youtube = plugin.plugin:YoutubePlugin',
+            'youtube = dsplayer_youtube.youtube:YoutubePlugin',
         ],
     },
 )
